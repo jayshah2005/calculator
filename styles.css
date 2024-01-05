@@ -56,9 +56,9 @@ body{
 
 .head{
     display: flex;
-    flex: 1;
     padding: 10px 20px;
     justify-content: space-between;
+    max-width: 445px;
 }
 
 .body{
