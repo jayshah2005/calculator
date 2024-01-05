@@ -33,8 +33,7 @@ body{
     background-color: rgb(96, 128, 96);
     border: 5px solid rgb(107, 141, 107);
     margin: 20px 10px;
-    gap: 20px;
-    
+    gap: 10px;
 }
 
 .result, .calculations{
@@ -42,9 +41,13 @@ body{
     justify-content: flex-end;
     align-items: flex-end;
     flex: 1;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'digital-clock-font';
-    padding: 10px;
+    padding: 0px 10px;
+}
+
+.result{
+    font-size: 75px;
 }
 
 .reset{
