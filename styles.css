@@ -1,3 +1,8 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('./digital-7/digital-7.ttf');
+   }
+
 html{
     height: 100%;
 }
@@ -26,27 +31,36 @@ body{
     height: 150px;
     width: auto;
     background-color: rgb(96, 128, 96);
-    border: 3px solid rgb(107, 141, 107);
+    border: 5px solid rgb(107, 141, 107);
     margin: 20px 10px;
     gap: 20px;
     
 }
 
-.calculations{
-    display: flex;
-    flex: 1;
-}
-
-.input{
+.result, .calculations{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex: 1;
+    font-size: 60px;
+    font-family: 'digital-clock-font';
+    padding: 10px;
 }
 
-.keypad{
+.reset{
+    min-width: 220px;
+}
+
+.head{
     display: flex;
-    height: 500px;
+    flex: 1;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.body{
+    display: flex;
+    height: 400px;
     padding: 10px 20px;
 }
 
@@ -67,7 +81,7 @@ body{
 
 .container{
     display: flex;
-    height: 100px;
+    height: 75px;
     width: 100px;
 }
 
@@ -84,9 +98,6 @@ body{
     min-width: 210px;
 }
 
-.operation{
-
-}
 
 .number{
     background-color: white;
