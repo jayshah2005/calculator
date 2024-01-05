@@ -83,16 +83,16 @@ function reset() {
 function genreateClearDeleteButtons(){
     const head = document.querySelector('.head') 
 
-    const reset = document.createElement('div');
-    reset.className = 'container reset'
+    const resetButton = document.createElement('div');
+    resetButton.className = 'container reset'
     const button1 = document.createElement('button')
     button1.className = 'buttons operation'
     button1.id = 'reset';
     button1.textContent = 'Reset';
     button1.addEventListener('click', reset)
 
-    reset.appendChild(button1);
-    head.appendChild(reset);
+    resetButton.appendChild(button1);
+    head.appendChild(resetButton);
 
     const deleteButton = document.createElement('div');
     deleteButton.className = 'container reset'
