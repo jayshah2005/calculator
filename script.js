@@ -1,6 +1,7 @@
 let num1 = null;
 let num2 = null;
-let calculations = document.querySelector('.calculations');
+const calculations = document.querySelector('.calculations');
+const input = document.querySelector('.result');
 
 // Manipulating the screen.
 function writeNumber(num) {
@@ -10,7 +11,6 @@ function writeNumber(num) {
 
 function operate(operation) {
 
-    const input = document.querySelector('.result');
 
     if(input.textContent == '' && calculations.textContent == ''){
         return
@@ -32,8 +32,6 @@ function operate(operation) {
 }
 
 function equals() {
-
-    const input = document.querySelector('.result');
 
     if(num1 == null){
         return
@@ -101,7 +99,9 @@ function genreateClearDeleteButtons(){
     button2.id = 'delete';
     button2.textContent = 'Delete';
     button2.addEventListener('click', () => {
-    document.querySelector('.result').textContent = ''
+        input.textContent != '' && calculations.textContent != '' && num1 != null && num2 != null ? 
+        reset() :
+        document.querySelector('.result').textContent = ''
     })
 
     deleteButton.appendChild(button2);
