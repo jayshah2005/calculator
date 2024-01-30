@@ -44,6 +44,8 @@ body{
     font-size: 50px;
     font-family: 'digital-clock-font';
     padding: 0px 10px;
+
+    overflow: hidden;
 }
 
 .result{
